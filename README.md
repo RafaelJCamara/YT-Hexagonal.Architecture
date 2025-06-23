@@ -1,0 +1,1 @@
+# YT-Hexagonal.Architecture
