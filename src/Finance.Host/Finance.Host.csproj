@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\adapters\driven\MongoDbAdapter\MongoDbAdapter.csproj" />
+    <ProjectReference Include="..\adapters\driven\RabbitMqAdapter\RabbitMqAdapter.csproj" />
+    <ProjectReference Include="..\adapters\driver\ApiAdapter\ApiAdapter.csproj" />
+    <ProjectReference Include="..\core\Core\Core.csproj" />
+  </ItemGroup>
+
+</Project>
